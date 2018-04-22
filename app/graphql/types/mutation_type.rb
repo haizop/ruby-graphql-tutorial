@@ -1,5 +1,5 @@
 Types::MutationType = GraphQL::ObjectType.define do
   name "Mutation"
 
-  field :createLink, Function: Resolvers::CreateLink.new
+  field :createLink, function: Resolvers::CreateLink.new
 end

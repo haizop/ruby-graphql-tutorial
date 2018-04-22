@@ -1,10 +1,10 @@
 class Resolvers::CreateLink < GraphQL::Function
   # arguments passed as "args"
   argument :description, !types.String
-  argument :url, !types.string
+  argument :url, !types.String
 
   # return type from the mutation
-  type Types:LinkType
+  type Types::LinkType
 
   # the mutation method
   # _obj - is parent object, which in this case is nil
