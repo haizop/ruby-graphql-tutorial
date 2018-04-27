@@ -1,5 +1,5 @@
 class Resolvers::SignInUser < GraphQL::Function
-  
+
   argument :credentials, !Types::AuthProviderCredentialsInput
 
   # defines inline return type for the mutation
@@ -10,7 +10,7 @@ class Resolvers::SignInUser < GraphQL::Function
     field :user, Types::UserType
   end
 
-  def call(_obj, args, _ctx)
+  def call(_obj, args, ctx)
     input = args[:credentials]
 
     # basic validation
