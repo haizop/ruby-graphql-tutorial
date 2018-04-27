@@ -10,6 +10,7 @@ class Resolvers::SignInUser < GraphQL::Function
     field :user, Types::UserType
   end
 
+<<<<<<< HEAD
   def call(_obj, args, ctx)
     input = args[:credentials]
 
