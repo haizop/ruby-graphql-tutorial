@@ -15,6 +15,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma', '~> 3.7'
 # yay
 gem 'graphql', '1.7.4'
+gem 'search_object', '1.2.0'
+gem 'search_object_graphql', '0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

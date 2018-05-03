@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Resolvers::SignInUser do
   def perform(args = {})
-    Resolvers::SignInUser.new.call(nil, args, { cookies: {}})
+    Resolvers::SignInUser.new.call(nil, args, { cookies: {}, session: {}})
   end
 
   before(:each) do
